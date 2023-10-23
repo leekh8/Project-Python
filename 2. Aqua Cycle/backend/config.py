@@ -1,0 +1,6 @@
+# Database configurations
+DATABASE_USERNAME = 'admin'
+DATABASE_PASSWORD = 'admin'
+DATABASE_HOSTNAME = 'localhost'
+DATABASE_NAME = 'aquacycle'
+DATABASE_URI = f'mysql+pymysql://{DATABASE_USERNAME}:{DATABASE_PASSWORD}@{DATABASE_HOSTNAME}/{DATABASE_NAME}'

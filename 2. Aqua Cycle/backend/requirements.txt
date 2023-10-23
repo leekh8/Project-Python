@@ -1,0 +1,8 @@
+Flask
+Flask-CORS
+pymysql
+faker
+flask_sqlalchemy
+sqlacodegen
+
+# pip install -r requirements.txt
