@@ -1,9 +1,14 @@
+import os
 import pymysql as ps
 from faker import Faker
 import random
 
-# 데이터베이스 연결
-conn = ps.connect(user='admin', password='admin', database='aquacycle')
+# 데이터베이스 연결 — 자격증명은 환경변수로 주입(기본값은 로컬 개발용 placeholder)
+conn = ps.connect(
+    user=os.environ.get('DATABASE_USERNAME', 'admin'),
+    password=os.environ.get('DATABASE_PASSWORD', 'admin'),
+    database=os.environ.get('DATABASE_NAME', 'aquacycle'),
+)
 
 cursor = conn.cursor()
 

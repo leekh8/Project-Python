@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Secrets / env
+.env
+.env.*
+!.env.example
+
+# Node (frontend subprojects)
+node_modules/
+dist/
+build/
+
+# OS
+.DS_Store
